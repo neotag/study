@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ruby on Rails: Welcome aboard</title>
+<script src="javascripts/jquery-1.5.1.min.js"></script>
+<script>
+$(function(){
+$.getJSON('/data/example.json', function(json){
+  alert('title: ' + json.title);
+  alert('content: ' + json.content);
+  alert('date: ' + json.date);
+});
+
+
+
+});
+</script>
+</head>
+<body>
+<ul>
+<li>読み込んでいる json  <a href="/data/example.json">/data/example.json</a></li>
+<li>jQuery.json の使い方 <a href="http://semooh.jp/jquery/api/ajax/jQuery.getJSON/+url,+data,+callback+/">http://semooh.jp/jquery/api/ajax/jQuery.getJSON/+url,+data,+callback+/</a></li>
+</ul>
+</body>
+</html>
